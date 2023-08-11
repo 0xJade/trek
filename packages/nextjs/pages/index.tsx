@@ -1,4 +1,5 @@
 import Link from "next/link";
+import EventTracker from "../components/EventTracker";
 import type { NextPage } from "next";
 import { BugAntIcon, MagnifyingGlassIcon, SparklesIcon } from "@heroicons/react/24/outline";
 import { MetaHeader } from "~~/components/MetaHeader";
@@ -11,16 +12,20 @@ const Home: NextPage = () => {
         <div className="px-5">
           <h1 className="text-center mb-8">
             <span className="block text-2xl mb-2">Welcome to</span>
-            <span className="block text-4xl font-bold">Scaffold-ETH 2</span>
+            <span className="block text-4xl font-bold">Token Trekkers</span>
           </h1>
           <p className="text-center text-lg">
-            Get started by editing{" "}
-            <code className="italic bg-base-300 text-base font-bold">packages/nextjs/pages/index.tsx</code>
+            Trekking around web3 ecosystems 🦒🦓 lvling up minds in crypto economic design 👾
           </p>
           <p className="text-center text-lg">
-            Edit your smart contract <code className="italic bg-base-300 text-base font-bold">YourContract.sol</code> in{" "}
-            <code className="italic bg-base-300 text-base font-bold">packages/hardhat/contracts</code>
+            Our mission is to educate web3 builders around crypto economic design and systems through workshops,
+            tutorials, and more!
           </p>
+          <div>
+            <br></br>
+            <EventTracker />
+          </div>
+          <p className="text-center text-lg">㋡ Coming to a conference near you! Stay tuned ㋡</p>
         </div>
 
         <div className="flex-grow bg-base-300 w-full mt-16 px-8 py-12">
