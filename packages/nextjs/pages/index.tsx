@@ -1,8 +1,11 @@
 import Link from "next/link";
 import EventTracker from "../components/EventTracker";
+import animations from "./Animations.module.css";
 import type { NextPage } from "next";
 import { BugAntIcon, MagnifyingGlassIcon, SparklesIcon } from "@heroicons/react/24/outline";
 import { MetaHeader } from "~~/components/MetaHeader";
+
+// Import animations
 
 const Home: NextPage = () => {
   return (
@@ -13,15 +16,21 @@ const Home: NextPage = () => {
           <h1 className="text-center mb-8">
             <span className="block text-2xl mb-2">Welcome to</span>
             <span className="block text-4xl font-bold">Token Trekkers</span>
+            <br></br>
           </h1>
           <p className="text-center text-lg">
             Trekking around web3 ecosystems 🦒🦓 lvling up minds in crypto economic design 👾
           </p>
           <p className="text-center text-lg">
-            Our mission is to educate web3 builders around crypto economic design and systems through workshops,
-            tutorials, and more!
+            Our mission is to educate web3 builders 🛠️⚡ around crypto economic design and systems 👩‍🎨👨‍🎨 through
+            workshops, tutorials, and more! 🤌
           </p>
           <div>
+            <br></br>
+            <br></br>
+            <h1 className="text-center mb-8">
+              <span className="block text-2xl font-bold">Upcoming Conferences</span>
+            </h1>
             <br></br>
             <EventTracker />
           </div>

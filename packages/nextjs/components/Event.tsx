@@ -25,11 +25,13 @@ const eventStyles = {
   eventName: {
     fontSize: "1.2rem",
     fontWeight: "bold", // Adding bold font weight
-    color: "#000",
+    color: "#fff",
+    textShadow: "1px 1px 2px rgba(0, 0, 0, 1)", // Adding text shadow
   },
   eventDate: {
     fontSize: "1rem",
     color: "#fff",
+    textShadow: "1px 1px 2px rgba(0, 0, 0, 0.8)", // Adding text shadow
   },
 };
 
@@ -41,7 +43,7 @@ const Event: React.FC<EventProps> = ({ event }) => {
           {event.name}, {event.city}
         </a>
       </h3>
-      <p style={eventStyles.eventDate}>Date: {new Date(event.date).toLocaleString()}</p>
+      <p style={eventStyles.eventDate}>{event.date}</p>
     </li>
   );
 };
