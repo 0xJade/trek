@@ -1,4 +1,5 @@
 import { useState } from "react";
+import tailwindConfig from "../../../tailwind.config";
 import { Abi, AbiFunction } from "abitype";
 import { Address } from "viem";
 import { useContractRead } from "wagmi";
@@ -61,7 +62,7 @@ export const ReadOnlyFunctionForm = ({ contractAddress, abiFunction }: TReadOnly
           )}
         </div>
         <button
-          className={`btn btn-secondary btn-sm ${isFetching ? "loading" : ""}`}
+          className={`btn bg-primary-content btn-sm ${isFetching ? "loading" : ""}`}
           onClick={async () => {
             const { data } = await refetch();
             setResult(data);
