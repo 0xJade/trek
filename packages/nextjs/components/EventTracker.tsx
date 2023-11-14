@@ -40,6 +40,13 @@ const eventData: EventData[] = [
     date: "2023/10/12",
     url: "https://www.eventbrite.com/e/eth-college-tickets-630227396107",
   },
+  {
+    id: 6,
+    name: "ETHDenver",
+    city: "Denver",
+    date: "2024/02/23",
+    url: "https://www.ethdenver.com/",
+  },
 ];
 
 const EventTracker: React.FC = () => {

@@ -9,7 +9,7 @@ const publicClient = createPublicClient({
   chain: mainnet,
   transport: http(`${mainnet.rpcUrls.alchemy.http[0]}/${scaffoldConfig.alchemyApiKey}`),
 });
-
+console.log(scaffoldConfig.alchemyApiKey);
 const ABI = parseAbi([
   "function getReserves() external view returns (uint112 reserve0, uint112 reserve1, uint32 blockTimestampLast)",
   "function token0() external view returns (address)",

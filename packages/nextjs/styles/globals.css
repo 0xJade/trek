@@ -2,9 +2,27 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-:root,
+:root {
+  /* Define custom properties for colors from scaffoldEthDark theme */
+  --primary: #1A237E; /* Space Blue */
+  --primary-content: #FFFFFF; /* Galactic Green */
+  --secondary: #323f61;
+  --secondary-content: #4CAF50; /* Galactic Green */
+  --accent: #FF9800; /* Cosmic Orange */
+  --accent-content: #4CAF50; /* Galactic Green */
+  --neutral: #4CAF50; /* Galactic Green (Background color) */
+  --neutral-content: #385183;
+  --base-100: #385183;
+  --base-200: #2A3655;
+  --base-300: #1A237E; /* Space Blue */
+  --base-content: #4CAF50; /* Galactic Green */
+  --info: #385183;
+  --success: #34EEB6;
+  --warning: #FFCF72;
+  --error: #FF8863;
+}
 [data-theme] {
-  background: hsl(var(--b2));
+  background: hsl(var(--neutral-content));
 }
 
 body {
