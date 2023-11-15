@@ -6,7 +6,7 @@ import animations from "./Animations.module.css";
 import type { NextPage } from "next";
 import { BugAntIcon, MagnifyingGlassIcon, SparklesIcon } from "@heroicons/react/24/outline";
 import { MetaHeader } from "~~/components/MetaHeader";
-import TypingEffect from "~~/components/TypingEffect";
+import Typewriter from "~~/components/TypeWriter";
 
 // Update the path accordingly
 
@@ -18,18 +18,24 @@ const Home: NextPage = () => {
         <div className="px-5">
           <h1 className="text-center mb-8">
             <span className="block text-2xl mb-2">
-              <TypingEffect text="Welcome to" />
+              <Typewriter text="Welcome to" delay={69} />
             </span>
             <span className="block text-4xl font-bold">
-              <TypingEffect text="Token Trekkers" />
+              <Typewriter text="Token Trekkers" delay={69} />
             </span>
             <br></br>
           </h1>
           <p className="text-center text-lg">
-            <TypingEffect text="Trekking around web3 ecosystems 🦒🦓 lvling up minds in crypto economic design 👾" />
+            <Typewriter
+              text="Trekking around web3 ecosystems 🦒🦓 lvling up minds in crypto economic design 👾"
+              delay={69}
+            />
           </p>
           <p className="text-center text-lg">
-            <TypingEffect text="Our mission is to educate web3 builders 🛠️⚡ around crypto economic design and systems 👩‍🎨👨‍🎨 through workshops, tutorials, and more! 🤌" />
+            <Typewriter
+              text="Our mission is to educate web3 builders 🛠️⚡ around crypto economic design and systems 👩‍🎨👨‍🎨 through workshops, tutorials, and more! 🤌"
+              delay={69}
+            />
           </p>
           <div>
             <br></br>
